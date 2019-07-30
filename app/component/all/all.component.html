@@ -1,0 +1,33 @@
+<p>all works!</p>
+<table border="1" align="center">
+    <th>ID</th>
+    <th>NAME</th>
+    <th>Des</th>
+    <th>image</th>
+    
+    
+   
+<tr *ngFor="let frnd of allProducts;let counter=index">
+    
+    <td>{{frnd.id}}</td>
+    <td >{{frnd.name}}</td>
+    <td >{{frnd.description}}</td>
+    <td >{{frnd.image_name}}</td>
+ 
+</tr>
+</table>
+<br><br>
+
+<tr *ngFor="let frnd of allProducts;let counter=index">
+    <div class="card" style="width: 25rem;">
+        <img src="assets/{{frnd.image_name}}" width="50" height="120" class="card-img-top" alt="..." >
+        <div class="card-body">
+         <h5 class="card-title">{{frnd.id}}</h5>
+          <h5 class="card-title">{{frnd.name}}</h5>
+          <p class="card-text">{{frnd.description}}</p>
+        </div>
+      </div>
+      
+
+
+</tr>
